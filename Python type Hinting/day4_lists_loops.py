@@ -1,4 +1,4 @@
-#  task 1
+#  task 1.
 def create_agent_list(agent1: str, agent2: str, agent3: str) -> list:
     return [agent1, agent2, agent3]
 
