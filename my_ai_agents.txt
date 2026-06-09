@@ -1,0 +1,4 @@
+Agent 1: Researcher (Searches for information from the internet)
+Agent 2: Writer (Writes articles and reports based on research)
+Agent 3: Validator (Checks for errors and validates output)
+Task 4:Send execution report via email
