@@ -1,0 +1,17 @@
+[
+    {
+        "agent_id": 101,
+        "agent_name": "Hari",
+        "role": "Automation"
+    },
+    {
+        "agent_id": 102,
+        "agent_name": "Joseph",
+        "role": "Research"
+    },
+    {
+        "agent_id": 103,
+        "agent_name": "Charley",
+        "role": "UI Design"
+    }
+]
