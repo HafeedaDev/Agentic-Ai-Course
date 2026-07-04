@@ -54,14 +54,14 @@ print(agent_json)
 
 # Task1: API Response Parsing
 
-json_data = '{"status": "success", "response": "Hello from Gemini"}'
+json_data = '{"status": "success", "response": "Hello from Gem"}'
 
 print(json_data)
 
 
 # Task 1:
 
-json_data = '{"status": "success", "response": "Hello from Gemini"}'
+json_data = '{"status": "success", "response": "Hello from Gem"}'
 
 parsed_dict = json.loads(json_data)
 

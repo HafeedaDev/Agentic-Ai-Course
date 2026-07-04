@@ -1,0 +1,20 @@
+[
+    {
+        "agent_id": 101,
+        "agent_name": "Jarvis",
+        "status": "active",
+        "accuracy": 95
+    },
+    {
+        "agent_id": 103,
+        "agent_name": "Friday",
+        "status": "active",
+        "accuracy": 92
+    },
+    {
+        "agent_id": 105,
+        "agent_name": "Eko",
+        "status": "active",
+        "accuracy": 89
+    }
+]

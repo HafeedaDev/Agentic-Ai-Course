@@ -25,7 +25,7 @@ llm_output = {
     
 ai_response_data = AIResponse(**llm_output)
 
-print(ai_response_data)
+print("AI response data",ai_response_data)
 
 
 # Task 8:Multiple  Agents Validator (List of Models)
@@ -48,4 +48,4 @@ network_data = {
 
 system_config_data = SystemConfig(**network_data)
 
-print(system_config_data)
+print("System_config_data: ", system_config_data)

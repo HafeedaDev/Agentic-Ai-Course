@@ -28,7 +28,6 @@ agent_file = "international_agent_data.txt"
 # Converting Pydantic object to a standard Python dict before dumping
 
 dict_data = agent_data.model_dump()
-\
 
 with open(agent_file, "w")as file:
     json.dump(dict_data, file,indent=4)

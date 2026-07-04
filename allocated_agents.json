@@ -1,0 +1,20 @@
+[
+    {
+        "agent_id": 301,
+        "agent_name": "Jarvis",
+        "allocation_status": "allocated",
+        "priority": "High"
+    },
+    {
+        "agent_id": 302,
+        "agent_name": "Friday",
+        "allocation_status": "allocated",
+        "priority": "Medium"
+    },
+    {
+        "agent_id": 304,
+        "agent_name": "Eko",
+        "allocation_status": "allocated",
+        "priority": "Low"
+    }
+]

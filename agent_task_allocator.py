@@ -43,3 +43,4 @@ with open(file_name ,"r")as file:
 for item in loaded_data:
     print(f"Agent Id:{item["task_id"]}\nAgent Name:{item["agent_name"]}\nAgent Job:{item["assigned_job"]}")     
     print("====================================")       
+
