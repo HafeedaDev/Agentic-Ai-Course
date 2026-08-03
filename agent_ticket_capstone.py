@@ -12,7 +12,7 @@ class AIAgentTickets (RootModel[List[Ticket]]):
     pass
 
     print("="*50)
-    print("Capstone Task: AI aGENT tICKET & Task Dispatcher")
+    print("Capstone Task: AI AGENT tICKET & Task Dispatcher")
     print("="*50)
 # Create A function 
 
@@ -43,9 +43,7 @@ try:
             ticket_id = agent.ticket_id,
             user_query = agent.user_query.strip(),
             priority = agent.priority.upper(),
-             estimated_hours = agent.estimated_hours/2
-
-
+            estimated_hours = agent.estimated_hours/2
         )
         for agent in validated_data
     ]
