@@ -1,0 +1,11 @@
+{
+    "order_id": 501,
+    "customer_name": "Faris",
+    "items": [
+        "Laptop",
+        "Mouse",
+        "Keyboard"
+    ],
+    "total_amount": 65000.5,
+    "is_paid": true
+}

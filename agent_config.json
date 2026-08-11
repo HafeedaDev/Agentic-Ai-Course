@@ -1,5 +1,10 @@
 {
-    "agent_name": "Jarvis",
-    "role": "AI System Designer",
-    "status": "Active"
+    "agent_name": "SearchAgent",
+    "status": "active",
+    "tools": [
+        "google_search",
+        "python_interpreter"
+    ],
+    "max_iterations": 5,
+    "is_certified": true
 }
