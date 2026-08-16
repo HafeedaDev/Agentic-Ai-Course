@@ -1,0 +1,11 @@
+2026-08-16 18:09:24,783 - INFO - Mathmatical task processing
+2026-08-16 18:09:24,784 - ERROR - Task failed:
+Traceback (most recent call last):
+  File "c:\Users\user\OneDrive\Desktop\Agentic-Ai-Course\agent_tool_router.py", line 21, in run_agent_router
+    result = primary_calculator(a,b)
+  File "c:\Users\user\OneDrive\Desktop\Agentic-Ai-Course\agent_tool_router.py", line 13, in primary_calculator
+    return a/b
+           ~^~
+ZeroDivisionError: division by zero
+2026-08-16 18:09:24,785 - WARNING - Switching to fallback (Adition)
+2026-08-16 18:09:24,785 - INFO - AI Agent finished

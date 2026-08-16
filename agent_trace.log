@@ -1,0 +1,18 @@
+2026-08-16 15:40:11,592 - INFO - AI Agent Started
+2026-08-16 15:40:11,592 - INFO - Processing Task
+2026-08-16 15:40:11,592 - ERROR - Task failed
+Traceback (most recent call last):
+  File "c:\Users\user\OneDrive\Desktop\Agentic-Ai-Course\agent_tracker.py", line 18, in run_ai_agent
+    result = 10 / 0
+             ~~~^~~
+ZeroDivisionError: division by zero
+2026-08-16 15:40:11,593 - INFO - AI Agent Finished
+2026-08-16 15:40:49,122 - INFO - AI Agent Started
+2026-08-16 15:40:49,125 - INFO - Processing Task
+2026-08-16 15:40:49,126 - ERROR - Task failed
+Traceback (most recent call last):
+  File "c:\Users\user\OneDrive\Desktop\Agentic-Ai-Course\agent_tracker.py", line 18, in run_ai_agent
+    result = 10 / 0
+             ~~~^~~
+ZeroDivisionError: division by zero
+2026-08-16 15:40:49,129 - INFO - AI Agent Finished

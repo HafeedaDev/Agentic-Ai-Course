@@ -1,0 +1,20 @@
+2026-08-16 19:24:28,425 - INFO - Processing news scraper agent
+2026-08-16 19:24:28,425 - ERROR - Failed Task:
+Traceback (most recent call last):
+  File "c:\Users\user\OneDrive\Desktop\Agentic-Ai-Course\news_scraper_agent.py", line 23, in fetch_news_agent
+    result = primary_news_source(topic)
+  File "c:\Users\user\OneDrive\Desktop\Agentic-Ai-Course\news_scraper_agent.py", line 15, in primary_news_source
+    raise ConnectionError("Failed to connect to server")
+ConnectionError: Failed to connect to server
+2026-08-16 19:24:28,427 - WARNING - System change to backup
+2026-08-16 19:24:28,427 - INFO - News fetching  process completed
+2026-08-16 19:41:17,113 - INFO - Processing news scraper agent
+2026-08-16 19:41:17,113 - ERROR - Failed Task:
+Traceback (most recent call last):
+  File "c:\Users\user\OneDrive\Desktop\Agentic-Ai-Course\news_scraper_agent.py", line 23, in fetch_news_agent
+    result = primary_news_source(topic)
+  File "c:\Users\user\OneDrive\Desktop\Agentic-Ai-Course\news_scraper_agent.py", line 15, in primary_news_source
+    raise ConnectionError("Failed to connect to server")
+ConnectionError: Failed to connect to server
+2026-08-16 19:41:17,114 - WARNING - System Switched to backup
+2026-08-16 19:41:17,115 - INFO - News fetching  process completed
