@@ -18,3 +18,6 @@ Traceback (most recent call last):
 ConnectionError: Failed to connect to server
 2026-08-16 19:41:17,114 - WARNING - System Switched to backup
 2026-08-16 19:41:17,115 - INFO - News fetching  process completed
+2026-08-17 13:04:24,982 - INFO - API Key loaded successfully
+2026-08-17 13:18:51,971 - INFO - API Key loaded successfully
+2026-08-17 13:31:31,284 - INFO - API Key loaded successfully
