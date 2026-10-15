@@ -10,3 +10,10 @@ __pycache__/
 # Logs
 *.log
 *.log.*
+
+# Script outputs (scripts recreate these when run)
+*.json
+agent_tasks.txt
+business_leads.txt
+international_agent_data.txt
+my_ai_agents.txt

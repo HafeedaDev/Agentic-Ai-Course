@@ -1,3 +1,0 @@
-Task 1: Scrape data from website
-Task 2: Clean the collected data
-Task 3: Save results into database
