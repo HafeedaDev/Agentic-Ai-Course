@@ -20,6 +20,7 @@ def run_ai_agent() -> None:
         logging.error("Task failed", exc_info=True)
     finally:
         logging.info("AI Agent Finished")
+        
 if __name__ == "__main__":
     run_ai_agent()        
 
