@@ -5,8 +5,6 @@ from dotenv import load_dotenv
 # Task Name: Environment Variable Integration & Secure Credentials Management
 # ----------------------------------------------------------------------------
 
-
-
 def initialize_env():
 
 # 1. logging configuration
@@ -25,12 +23,12 @@ def initialize_env():
     api_key = os.getenv("MY_AGENT_API_KEY")
 
 # 4. Checking whether the key has been received or not
-    if api_key:
-        logging.info("API Key loaded successfully")
-        print(f"API Key Found: {api_key}")
+    if api_key is None:
+        logging.error("API Key not found")
+        print("API Key not found")
     else:
-        logging.error("API Key missing in .env file")
-        print("API Key not found!")
+        logging.info("API Key loaded successfully")
+        print(f"API Key found: ****{api_key[-4:]}")
 
 if __name__ == "__main__":
     initialize_env()
