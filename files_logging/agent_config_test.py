@@ -19,12 +19,14 @@ def agent_config():
     agent_name = os.getenv("AGENT_NAME")
     agent_token = os.getenv("AGENT_SECRET_TOKEN")
 
-    if agent_name and agent_token:
-        logging.info(f"Agent {agent_name} configured with valid token")
-        print(f"Sucessful! Got Agent  {agent_name} ,Token {agent_token}")
+    if  not agent_name or not agent_token:
+         logging.error("Configuration missing!")  
+         print(f"Configuration missing!")
+         
     else :
-        logging.error("Configuration missing!")  
-        print(f"Configuration missing!")
+        logging.info(f"Agent {agent_name} configured with valid token")
+        print(f"Successful! Got Agent  {agent_name} ,Token ****{agent_token[-4:]}")
+        
 
 if __name__ == "__main__":
       agent_config()
