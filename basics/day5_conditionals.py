@@ -43,15 +43,15 @@ print(monitor_system(50, 30))
 # Task 4
 
 
-def calculate_discount(bill_amount: float, is_prime: bool) -> int:
+def calculate_discount(bill_amount: float, is_prime: bool) -> str:
     if bill_amount > 5000 and is_prime == True:
-        return "25% "
+        return "25%"
     elif bill_amount > 5000 and is_prime == False:
-        return "15% "
+        return "15%"
     elif 2000 <= bill_amount <= 5000:
-        return "10% "
+        return "10%"
     else:
-        return "0% "
+        return "0%"
 
 
 print(calculate_discount(6000, True))
