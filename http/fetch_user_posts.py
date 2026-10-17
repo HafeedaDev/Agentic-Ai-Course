@@ -1,8 +1,9 @@
 import requests
+
 def fetch_user_posts(user_id):
     url = "https://jsonplaceholder.typicode.com/posts"
 
-    query_params = {"used_id":user_id}
+    query_params = {"userId":user_id}
     try:
         response = requests.get(url, params=query_params,timeout=5)
         response.raise_for_status()
