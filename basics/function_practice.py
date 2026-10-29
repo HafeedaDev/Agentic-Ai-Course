@@ -1,16 +1,16 @@
 
 def check_voting_eligiblity(name,age):
     if age >= 18:
+        
+        print(f"Hi {name}: You are eligible to vote")
         return{"name":name, "is_eligible":True}
     else:
+        print("You are not eligible to vote")
         return{"name":name ,"is_eligible": False}
     
-data = check_voting_eligiblity("Hari",13)
-if data["is_eligible"]==True:
-    print(f"Hi {data['name']}: You are eligible to vote")
-else:
-    print("You are not eligible to vote")
- 
+check_voting_eligiblity("Hari",13)
+check_voting_eligiblity("shatu",23)
+
 
 # --------------------------------------------------------------------------
 def calculate_student_result(name,mark1,mark2):
@@ -85,3 +85,13 @@ def chunk_text(text,chunk_size):
 simple_text = "Python is an amazing language for AI Automation Engineers"
 result = chunk_text(simple_text, chunk_size=3)
 print(result)
+
+
+
+
+
+ 
+
+
+
+

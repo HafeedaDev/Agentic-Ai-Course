@@ -8,10 +8,10 @@ raw_agents = [
     {"id": "A-4", "name": "cache_cleaner", "workload_score": 15, "active": True},
 ]
 
-raw_data_comprehension = {
-    agent["id"]:agent["name"].upper() for agent in raw_agents  if agent["active"]== True and agent["workload_score"]> 50
-} 
+raw_data_comprehension = {agent["id"]:agent["name"].upper() for agent in raw_agents if agent["workload_score"] >= 50 and agent["active"]  }
 print(raw_data_comprehension)
+
+
 
 
 agent_metrics = [
@@ -21,10 +21,10 @@ agent_metrics = [
     {"agent_id": "A-104", "name": "tool_router", "tasks_completed": 88, "region": "AP-South", "is_active": True},
 ]
 
-active_agent_summery = {
-    agent["agent_id"]:(agent["name"],agent["region"]) for  agent in agent_metrics if agent["is_active"] == True
+active_agent_summary = {
+    agent["agent_id"]:(agent["name"],agent["region"]) for  agent in agent_metrics if agent["is_active"] 
 }
-print(f"Active Agent Summery :{active_agent_summery}")
+print(f"Active Agent Summery: {active_agent_summary}")
 
 high_performer_map = {
    agent["name"].upper():agent["tasks_completed"]
