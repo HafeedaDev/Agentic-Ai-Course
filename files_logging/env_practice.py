@@ -23,9 +23,10 @@ def initialize_env():
     api_key = os.getenv("MY_AGENT_API_KEY")
 
 # 4. Checking whether the key has been received or not
-    if api_key is None:
+    if  api_key is None:
         logging.error("API Key not found")
         print("API Key not found")
+    
     else:
         logging.info("API Key loaded successfully")
         print(f"API Key found: ****{api_key[-4:]}")
