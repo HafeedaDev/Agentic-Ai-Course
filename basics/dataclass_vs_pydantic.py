@@ -11,5 +11,7 @@ class B(BaseModel):
 
 x = A("hello")
 print(x)
-
-Y = B(age="hello")
+try:
+    y = B(age="hello")
+except Exception as e:
+    print("Pydantic blocked it:", e)
