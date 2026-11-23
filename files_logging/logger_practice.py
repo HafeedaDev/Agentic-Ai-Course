@@ -1,15 +1,7 @@
+
 import logging
-
-# logging.basicConfig(
-#     level = logging.DEBUG,
-#     format='%(asctime)s - %(name)s - %(levelname)s - %(message)s'
-
-# )
-
-# logger = logging.getLogger(__name__)
-# logger.info("This is  a test message")
-
 from logging.handlers import RotatingFileHandler
+
 logger = logging.getLogger(__name__)
 logger.setLevel(logging.DEBUG)
 
@@ -18,6 +10,8 @@ handler = RotatingFileHandler(
     maxBytes=200,
     backupCount=3
 )
+formatter = logging.Formatter("%(asctime)s - %(levelname)s - %(message)s")
+handler.setFormatter(formatter)
 
 logger.addHandler(handler)
 

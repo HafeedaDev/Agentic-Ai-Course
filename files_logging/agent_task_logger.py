@@ -1,31 +1,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 # DAY 11: FILE HANDLING PRACTICE (TASK 2)
 # Purpose: Creating a file and writing agent roles
 # ==========================================

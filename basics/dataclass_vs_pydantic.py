@@ -9,9 +9,9 @@ class A:
 class B(BaseModel):
     age: int 
 
-x = A("hello")
+x = A("hello")  #type: ignore
 print(x)
 try:
-    y = B(age="hello")
+    y = B(age="hello") #type: ignore
 except Exception as e:
     print("Pydantic blocked it:", e)
