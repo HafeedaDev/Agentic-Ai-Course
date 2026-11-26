@@ -44,14 +44,14 @@ print("[Success] Json file has been created")
 with open(agent_json_file, "r")as file:
    loaded_datas =  json.load(file)
    print(f"[load Success] success rate is: {loaded_datas["success_rate"]}")
-   print(f"exicution time is :{loaded_datas["execution_time"]}")
+   print(f"execution time is :{loaded_datas["execution_time"]}")
          
         
 #  Task 3: User Profile & Dynamic Welcome Message
 
 dict_datas = {
     "user_id":101,
-    "username":"HafeedaDev",
+    "username":"Rahul",
     "theme":"Dark",
     "role":"AI System Design"
  }
@@ -64,8 +64,8 @@ print("[Success Write and json Dump]")
   
 with open(user_profile, "r")as file:
     loaded_data = json.load(file)
-print(f"[Load Success] Welcome back HafeedaDev")
-print(f"Role: {loaded_data["role"]} \n Active Theme {loaded_data["theme"]}")      
+print(f"[Load Success] Welcome back {loaded_data['username']}")
+print(f"Role: {loaded_data['role']} \nActive Theme {loaded_data['theme']}")      
     
 
 
