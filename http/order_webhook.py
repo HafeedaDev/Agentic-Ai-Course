@@ -46,7 +46,7 @@ app = FastAPI()
 
 
 @app.post("/webhook/order")
-def recieve_order(data: dict):
+def receive_order(data: dict):
     try:
         order = Order(**data)
     except ValidationError as e:
