@@ -1,4 +1,6 @@
 import requests
+
+
 URL = "http://127.0.0.1:8000/webhook/order"
 
 orders = [
@@ -10,8 +12,15 @@ orders = [
     {"order_id": "A106", "customer_email": "big@gmail.com", "quantity": 5, "price": 300, "total": 1500},
      
 ]
+accepted = 0
+rejected = 0
 
 for order in orders:
     response = requests.post(URL, json=order, timeout=5)
     print(order["order_id"], "->", response.status_code, response.json())
     
+    if response.status_code == 200:
+        accepted +=1
+    else:
+        rejected +=1
+print(f"Accepted: {accepted}  | Rejected: {rejected}")
