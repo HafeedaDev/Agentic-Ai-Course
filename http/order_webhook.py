@@ -1,6 +1,5 @@
 
 import logging
-from multiprocessing import Value
 from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel, ValidationError, field_validator, model_validator
 
@@ -26,6 +25,8 @@ class Order(BaseModel):
     def clean_email(cls, value):
         if isinstance(value, str):
             value = value.strip().lower()
+        if  "@" not in value:
+            raise ValueError("email must contain @")
         return value
 
     @field_validator("quantity", mode="after")
@@ -49,9 +50,14 @@ def recieve_order(data: dict):
     try:
         order = Order(**data)
     except ValidationError as e:
-        errors = [err["msg"] for err in e.errors()]
+        errors = []
+        for err in e.errors():
+            field = err['loc'][0] if err['loc'] else "order"
+            errors.append(f"{field}: {err['msg']}")
         logger.error(f"Order rejected: {data.get('order_id')} ->{errors}")
         raise HTTPException(status_code=422,detail=errors)
 
     logger.info(f"Order received: {order.order_id}, {order.customer_email}, total={order.total}")
+    if order.total > 1000:
+        logger.warning(f"Big order: {order.order_id}, total={order.total}")
     return {"status": "received", "order_id": order.order_id}
